@@ -1,3 +1,11 @@
+Fork from Reverie 5
+===================
+This WordPress theme is a customized fork of reverie for my website : [nicolasjoseph.com](http://www.nicolasjoseph.com). Check out the Reverie website. When it comes to making WordPress Themes, this framework is really awsome. I also made the [Quandora](http://www.quandora.com) website out of it.
+
+You will find the Reverie original documentation below.
+
+----------------------------------------------------------------------------------------------------------------------
+
 A Brief Introduction
 ====================
 Reverie Framework is an extremely versatile HTML5 WordPress framework based on ZURB's [Foundation](http://foundation.zurb.com), a powerful tool for building prototypes on any kind of devices. Reverie follows [HTML5 Boilerplate](http://html5boilerplate.com) standard and is [hNews microformat](https://www.readability.com/publishers/guidelines) ready. It is optimized for Search Engine while at the same time improves readability.
