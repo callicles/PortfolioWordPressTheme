@@ -5,6 +5,7 @@ Default Template For bbPress
 get_header(); ?>
 
 <!-- Row for main content area -->
+<div class="row">
 	<div class="small-12 large-12 columns" role="main">
 	
 	<?php /* Start loop */ ?>

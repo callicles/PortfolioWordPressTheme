@@ -93,18 +93,31 @@ $sidebars = array('Footer');
 foreach ($sidebars as $sidebar) {
     register_sidebar(array('name'=> $sidebar,
     	'id' => 'Footer',
-        'before_widget' => '<div class="large-3 columns"><article id="%1$s" class="panel widget %2$s">',
-        'after_widget' => '</article></div>',
-        'before_title' => '<h4>',
-        'after_title' => '</h4>'
+        'before_widget' => '<article id="%1$s" class="widget %2$s">',
+        'after_widget' => '</article>',
+        'before_title' => '<h6><strong>',
+        'after_title' => '</strong></h6>'
     ));
 }
 
 // return entry meta information for posts, used by multiple loops.
 if(!function_exists('reverie_entry_meta')) :
     function reverie_entry_meta() {
-        echo '<span class="byline author">'. __('Written by', 'reverie') .' <a href="'. get_author_posts_url(get_the_author_meta('ID')) .'" rel="author" class="fn">'. get_the_author() .', </a></span>';
-        echo '<time class="updated" datetime="'. get_the_time('c') .'" pubdate>'. get_the_time('F jS, Y') .'</time>';
+        echo '<p><i class="fi-clock"> <time class="updated" datetime="'. get_the_time('c') .'" pubdate>'. sprintf(__('Posted on %s at %s.', 'reverie'), get_the_time('l, F jS, Y'), get_the_time()) .'</time></i></p>';
     }
 endif;
+
+function catch_that_image() {
+    $files = get_children('post_parent='.get_the_ID().'&post_type=attachment&post_mime_type=image');
+      if($files) :
+        $keys = array_reverse(array_keys($files));
+        $j=0;
+        $num = $keys[$j];
+        $image=wp_get_attachment_image($num, 'large', false);
+
+        return $image;
+      else :
+        return '<img src="http://placehold.it/300x200&text=No+Post+Image">';
+      endif;
+}
 ?>

@@ -42,12 +42,12 @@ body {
 }
 
 body {
-  background: #f7f7f7;
-  color: #444444;
+  background: #1a1a1a;
+  color: white;
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-weight: normal;
+  font-family: "Raleway", "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 200;
   font-style: normal;
   line-height: 1;
   position: relative;
@@ -170,13 +170,13 @@ ul.pagination li.unavailable:hover a, ul.pagination li.unavailable a:focus {
   background: transparent;
 }
 ul.pagination li.current a {
-  background: #008cba;
+  background: #3f77c1;
   color: white;
   font-weight: bold;
   cursor: default;
 }
 ul.pagination li.current a:hover, ul.pagination li.current a:focus {
-  background: #008cba;
+  background: #3f77c1;
 }
 ul.pagination li {
   float: left;
@@ -294,7 +294,7 @@ time a {
 span.author a:hover, span.author a:focus,
 time a:hover,
 time a:focus {
-  color: #444444;
+  color: white;
 }
 
 .entry-author {
@@ -311,7 +311,7 @@ time a:focus {
   color: #999;
 }
 .entry-author h4 a:hover, .entry-author h4 a:focus {
-  color: #444444;
+  color: white;
 }
 .entry-author p {
   color: #bbb;
@@ -330,7 +330,7 @@ time a:focus {
   color: #999;
 }
 .entry-tags a:hover, .entry-tags a:focus {
-  color: #444444;
+  color: white;
 }
 
 .page-numbers {
@@ -364,13 +364,13 @@ time a:focus {
   background: transparent;
 }
 .page-numbers li.current a {
-  background: #008cba;
+  background: #3f77c1;
   color: white;
   font-weight: bold;
   cursor: default;
 }
 .page-numbers li.current a:hover, .page-numbers li.current a:focus {
-  background: #008cba;
+  background: #3f77c1;
 }
 .page-numbers li {
   float: left;
@@ -399,7 +399,7 @@ time a:focus {
   background: #e6e6e6;
 }
 .page-numbers li span.current {
-  background: #008cba;
+  background: #3f77c1;
   padding: 0.0625rem 0.625rem 0.0625rem;
   color: white;
   font-weight: bold;
@@ -461,7 +461,7 @@ ol.commentlist li section.comment a.comment-reply-link {
   color: #bbb;
 }
 ol.commentlist li section.comment a.comment-reply-link:hover, ol.commentlist li section.comment a.comment-reply-link:focus {
-  color: #444444;
+  color: white;
 }
 
 #sidebar {
@@ -478,7 +478,7 @@ ol.commentlist li section.comment a.comment-reply-link:hover, ol.commentlist li 
   font-size: 0.9375rem;
 }
 #sidebar .panel a:hover, #sidebar .panel a:focus, .footer-widget .panel a:hover, .footer-widget .panel a:focus {
-  color: #444444;
+  color: white;
 }
 #sidebar ul, .footer-widget ul {
   list-style-type: none;
@@ -506,7 +506,7 @@ footer.full-width a {
   font-size: 0.9375rem;
 }
 footer.full-width a:hover, footer.full-width a:focus {
-  color: #444444;
+  color: white;
 }
 footer.full-width .love-reverie {
   border-top: 1px solid #ccc;
@@ -538,4 +538,184 @@ footer.full-width .love-reverie {
     margin-top: 3rem;
     padding-top: 2rem;
   }
+}
+#home-logo {
+  max-width: 250px;
+}
+
+#home-screen {
+  margin-top: 20vh;
+  text-align: center;
+  padding-top: 2.5rem;
+  padding-bottom: 1.25rem;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#home-screen h1 {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+#home-screen a {
+  color: #FFFFFF;
+}
+#home-screen h4 {
+  color: #FFFFFF;
+  margin-top: -10px;
+}
+
+.home-background {
+  top: -100px;
+  height: 90vh;
+}
+
+form[role=search] {
+  margin-top: 15px;
+}
+form[role=search] input:focus {
+  width: 300px;
+}
+
+#searchsubmit {
+  padding: 0;
+  height: 29px;
+}
+
+#footer {
+  text-align: center;
+  background-color: #343434;
+}
+#footer i {
+  font-size: 100pt;
+  color: #FFFFFF;
+}
+
+.posts p.date {
+  font-weight: 100;
+  font-size: 11pt;
+}
+.posts .post-preview {
+  margin-bottom: 50pt;
+}
+
+.paddings {
+  padding-top: 20px;
+}
+
+.page-title {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.page-title h1 {
+  margin-top: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  padding: 0.5em;
+  margin-bottom: 50px;
+}
+.page-title p {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  padding: 0.5em;
+}
+
+h1 {
+  color: #FFFFFF;
+}
+
+h2 {
+  color: #FFFFFF;
+}
+
+h3 {
+  margin-top: 15pt;
+}
+
+h4 {
+  color: #8caeda;
+}
+
+.bloc {
+  padding-bottom: 2.5rem;
+  padding-top: 2.5rem;
+}
+
+.grey {
+  background-color: #343434;
+}
+
+.bloc .grey {
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+}
+
+#sub-menu {
+  width: 100%;
+  z-index: 98;
+  padding-top: 10px;
+  top: 0px;
+  position: fixed;
+  text-align: center;
+  background-color: #262626;
+}
+#sub-menu .sub-nav {
+  display: inline-block;
+  margin: 0 auto;
+}
+#sub-menu #sub-menu-control {
+  text-align: center;
+  padding-bottom: 5px;
+}
+#sub-menu #sub-menu-control a i {
+  color: #FFFFFF;
+}
+
+textarea {
+  height: 15em;
+}
+
+.thumbnail {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.tags {
+  margin-bottom: 1em;
+  margin-left: 1em;
+  line-height: 1.5em;
+}
+
+.home-background {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#subscribe-field {
+  margin-left: 0.625rem;
+}
+
+label[for=subscribe-field] {
+  color: #3f77c1;
+}
+
+span[class=label] a {
+  color: white;
+}
+
+#wpstats {
+  display: none;
+}
+
+.thumb-warper {
+  height: 140px;
+  margin-top: 1em;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.entry-content {
+  margin-bottom: 100pt;
 }

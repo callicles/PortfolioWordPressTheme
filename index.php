@@ -1,8 +1,19 @@
 <?php get_header(); ?>
 
 <!-- Row for main content area -->
-	<div class="small-12 large-8 columns" id="content" role="main">
-	
+</div>
+	<div class="page-title" style="background-image: url('<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>')">
+		<div class="row">
+			<div class="small-12 columns">
+				<h1> Grey Matter </h1>
+			</div>
+		</div>
+	</div>
+
+
+<div class="row">
+	<div class="small-12 large-12 columns bloc " role="main">
+
 	<?php if ( have_posts() ) : ?>
 	
 		<?php /* Start the Loop */ ?>
@@ -22,8 +33,7 @@
 			<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'reverie' ) ); ?></div>
 		</nav>
 	<?php } ?>
-
 	</div>
-	<?php get_sidebar(); ?>
+
 		
 <?php get_footer(); ?>

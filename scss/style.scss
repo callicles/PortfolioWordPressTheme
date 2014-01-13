@@ -12,6 +12,8 @@
 // Tweak the mixin for WordPress, this might create some extra CSS in additional to app.css
 @import "foundation/components/pagination";
 
+$grey : #343434;
+
 // Reverie comes with a standalone Foundation stylesheet already
 // @import "foundation";
 
@@ -342,3 +344,194 @@ footer.full-width {
 		padding-top: rem-calc(32);
 	}
 }
+
+// Added
+
+#home-logo {
+	max-width:250px;
+}
+
+#home-screen {
+	margin-top: 20vh;
+	text-align:center;
+	padding-top:emCalc(40);
+	padding-bottom:emCalc(20);
+	padding-right:emCalc(10);
+	padding-left:emCalc(10);
+	background-color : rgba(0, 0, 0, 0.5);
+	h1{
+		margin-top:30px;
+		margin-bottom:0;
+	}
+	a {
+		color:#FFFFFF;
+	}
+	h4 {
+		color:#FFFFFF;
+		margin-top:-10px;
+	}
+}
+.home-background{
+	top:-100px;
+	height: 90vh;
+}
+
+form[role=search]{
+	margin-top:15px;
+
+	input:focus {
+		width:300px;
+	}
+
+}
+
+#searchsubmit{
+	padding: 0;
+	height: 29px;
+}
+
+#footer{
+	text-align:center;
+	background-color:#343434;
+	i {
+		font-size:100pt;
+		color:#FFFFFF;
+	}
+}
+
+.posts {
+	p.date{
+		font-weight:100;
+		font-size:11pt;
+	}
+	.post-preview {
+		margin-bottom:50pt;
+	}
+}
+
+.paddings {
+	padding-top:20px;
+}
+
+.page-title {
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-position:center; 
+	h1{
+		margin-top:100px;
+		background-color : rgba(0, 0, 0, 0.5);
+		display:inline-block;
+		padding:0.5em;
+		margin-bottom:50px;
+	}
+	p {
+		background-color : rgba(0, 0, 0, 0.5);
+		display:inline-block;
+		padding:0.5em;
+	}
+}
+
+h1{
+	color:#FFFFFF;
+}
+
+h2 {
+	color:#FFFFFF;
+}
+
+h3{
+	margin-top: 15pt;
+}
+
+h4 {
+	color:lighten( $primary-color, 20% );
+}
+
+.bloc {
+	padding-bottom: emCalc(40);
+	padding-top: emCalc(40);
+}
+
+.grey {
+	background-color: $grey;
+}
+
+.bloc .grey {
+	padding-right:emCalc(40);
+	padding-left:emCalc(40);
+}
+
+#sub-menu {
+	width:100%;
+	z-index: 98;
+	padding-top:10px;
+	top: 0px;
+	position: fixed;
+	text-align:center;
+	background-color: #262626;
+	.sub-nav {
+		display: inline-block;
+		margin: 0 auto;
+	}
+	#sub-menu-control {
+		text-align:center;
+		padding-bottom:5px;
+
+		a i{
+			color: #FFFFFF;
+		}
+	}
+}
+
+textarea {
+	height: 15em;
+}
+
+.thumbnail{
+
+	min-height:100%;
+	min-width:100%;
+}
+
+.tags {
+	margin-bottom:1em;
+	margin-left:1em;
+	line-height:1.5em;
+}
+
+.home-background {
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#subscribe-field {
+	margin-left: emCalc(10);
+}
+
+label[for=subscribe-field]{
+	color:$primary-color;
+}
+
+span[class=label]{
+	a {
+		color: white;
+	}
+}
+
+#wpstats{
+	display:none;
+}
+
+.thumb-warper {
+	height:140px;
+	margin-top:1em;
+	width:100%;
+	background-position:center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.entry-content{
+	margin-bottom: 100pt;
+}
+

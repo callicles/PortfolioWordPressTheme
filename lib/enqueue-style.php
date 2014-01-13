@@ -13,6 +13,9 @@ function reverie_enqueue_style()
 	
 	wp_enqueue_style( 'reverie-foundation-stylesheet' );
 	wp_enqueue_style( 'reverie-stylesheet' );
+
+	wp_register_style( 'foundation-icon', get_template_directory_uri() . '/css/foundation-icons.css', array(), '', 'all' );
+	wp_enqueue_style( 'foundation-icon' );
 	
 	// Register child theme style if using child theme
 	if ( is_child_theme() ) {

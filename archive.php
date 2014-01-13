@@ -1,6 +1,17 @@
 <?php get_header(); ?>
 
 <!-- Row for main content area -->
+</div>
+	<div class="page-title" style="background-image: url('<?php echo get_template_directory_uri(). "/img/archive.jpg"?>')">
+		<div class="row">
+			<div class="small-12 columns">
+				<h1> Grey Matter </h1>
+			</div>
+		</div>
+	</div>
+
+
+<div class="row">
 	<div class="small-12 large-8 columns" id="content" role="main">
 	
 	<?php if ( have_posts() ) : ?>
@@ -24,6 +35,6 @@
 	<?php } ?>
 
 	</div>
-	<?php get_sidebar(); ?>
+
 		
 <?php get_footer(); ?>

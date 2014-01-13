@@ -111,7 +111,7 @@ function reverie_scripts_and_styles() {
     wp_register_script( 'reverie-modernizr', get_template_directory_uri() . '/js/modernizr.js', array(), '2.6.2', false );
 
     // register Google font
-    wp_register_style('google-font', 'http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Lora:400,700|Droid+Sans+Mono');
+   	wp_register_style( 'google-font', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://fonts.googleapis.com/css?family=Raleway", array(), '', 'all' );
 
     // ie-only style sheet
     wp_register_style( 'reverie-ie-only', get_template_directory_uri() . '/css/ie.css', array(), '' );
@@ -121,7 +121,8 @@ function reverie_scripts_and_styles() {
     
     // adding Foundation scripts file in the footer
     wp_register_script( 'reverie-js', get_template_directory_uri() . '/js/foundation.min.js', array( 'jquery' ), '', true );
-    
+    wp_register_script( 'app.js', get_template_directory_uri() . '/js/app.js', array( 'jquery' ), '', true );
+
     global $is_IE;
     if ($is_IE) {
        wp_register_script ( 'html5shiv', "http://html5shiv.googlecode.com/svn/trunk/html5.js" , false, true);
@@ -140,6 +141,7 @@ function reverie_scripts_and_styles() {
 	
     wp_enqueue_script( 'reverie-js' );
     wp_enqueue_script( 'html5shiv' );
+    wp_enqueue_script( 'app.js' );
 
   }
 }

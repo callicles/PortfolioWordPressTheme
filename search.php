@@ -1,10 +1,19 @@
 <?php get_header(); ?>
 
 <!-- Row for main content area -->
-	<div class="small-12 large-8 columns" id="content" role="main">
-	
-		<h2><?php _e('Search Results for', 'reverie'); ?> "<?php echo get_search_query(); ?>"</h2>
-	
+</div>
+	<div class="page-title" style="background-image: url('<?php echo get_template_directory_uri(). "/img/archive.jpg"?>')">
+		<div class="row">
+			<div class="small-12 columns">
+				<h1> <?php _e('Search Results for', 'reverie'); ?> "<?php echo get_search_query(); ?>" </h1>
+			</div>
+		</div>
+	</div>
+
+
+<div class="row">
+	<div class="small-12 large-12 columns bloc " role="main">
+
 	<?php if ( have_posts() ) : ?>
 	
 		<?php /* Start the Loop */ ?>
@@ -24,8 +33,6 @@
 			<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'reverie' ) ); ?></div>
 		</nav>
 	<?php } ?>
-
 	</div>
-	<?php get_sidebar(); ?>
 		
 <?php get_footer(); ?>
