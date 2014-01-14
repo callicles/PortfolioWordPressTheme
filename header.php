@@ -8,10 +8,10 @@
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>">
 
-	<title><?php wp_title('|', true, 'right'); bloginfo('name'); ?></title>
+	<title><?php wp_title('|', true, 'right'); ?></title>
 
 	<!-- Mobile viewport optimized: j.mp/bplateviewport -->
-	<meta name="viewport" content="width=device-width" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<!-- Favicon and Feed -->
 	<link rel="shortcut icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
@@ -41,7 +41,7 @@
 
 <div id="topAnchor"></div>
 
-<header>
+<header id="header">
 	<div class="fixed">
 	<!-- Starting the Top-Bar -->
 		<nav class="top-bar" data-topbar>
@@ -91,19 +91,15 @@
 		</nav>
 	</div>
 	<div id="sub-menu">
-		<div class="row">
-			<div class="small-12 large-12 columns">
-				<dl id="sub-nav" class="sub-nav">
-				</dl>
-				<div id="sub-menu-control">
-					<a onclick="toggleSubMenu();" ><i class="fi-list"></i></a>
-				</div>
-			</div>
+		<dl id="sub-nav" class="sub-nav">
+		</dl>
+		<div id="sub-menu-control">
+			<a onclick="toggleSubMenu();" ><i class="fi-list"></i></a>
 		</div>
 	</div>
 	<!-- End of Top-Bar -->
 </header>
 
 <!-- Start the main container -->
-<div class="container" role="document">
-	<div class="row">
+<section class="container" role="document">
+	<div class="row collapse">

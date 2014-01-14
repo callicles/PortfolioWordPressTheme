@@ -6,7 +6,7 @@ get_header(); ?>
 </div>
 
 <div class="home-background" style="background-image: url('<?php echo get_template_directory_uri() . '/img/fond.jpg'; ?>')">
-<div class="row">
+<div class="row collapse">
 <!-- Row for main content area -->
 	<header class="small-12 large-7 large-centered columns" role="main">
 		<div id="home-screen">
@@ -25,7 +25,7 @@ get_header(); ?>
 	<?php endwhile; // End the loop ?>
 
 <div class="bloc">
-<div class="row" style="text-align: center;">
+<div class="row collapse" style="text-align: center;">
 		<h2 id="latest-posts">Latest Posts </h2>
 </div>
 <div class="posts">
@@ -69,5 +69,5 @@ get_header(); ?>
 			?>
 		</div>
 	</div>
-		<div class="row">
+		<div class="row collapse">
 <?php get_footer(); ?>

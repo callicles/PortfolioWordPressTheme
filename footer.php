@@ -2,9 +2,9 @@
 </div><!-- Container End -->
 
 <div id="footer">
-	<div class="row paddings">
+	<div class="row collapse paddings">
 		<h2 id="social" >Social</h2>
-		<ul class="small-block-grid-2 large-block-grid-4">
+		<ul class="small-block-grid-2 large-block-grid-4 collapse">
 			<li><a href="https://github.com/callicles" ><i class="fi-social-github"></i></a></li>
 		 	<li><a href="https://www.linkedin.com/pub/nicolas-joseph/24/b29/458/" ><i class="fi-social-linkedin"></i></a></li>
 		 	<li><a href="https://twitter.com/NicolasJosephIT"><i class="fi-social-twitter"></i></a></li>
@@ -12,15 +12,15 @@
 		</ul>
 	</div>
 
-	<div class="row">
+	<div class="row collapse">
 		<div class="small-12 large-5 large-centered columns" style="text-align: center;">
 			<?php dynamic_sidebar("Footer"); ?>
 		</div>
 	</div>
 
-	<footer class="row " role="contentinfo">
+	<footer class="row collapse" role="contentinfo">
 		<div class="small-12 large-5 small-centered columns">
-			<p><a href="http://foundation.zurb.com/">Foundation</a> - <a href="http://wordpress.org/">Wordpress</a> - <a href="http://www.siteduzero.com/">Site du Zero</a>
+			<p><a href="http://foundation.zurb.com/">Foundation</a> - <a href="http://wordpress.org/">Wordpress</a> - <a href="http://fr.openclassrooms.com/">Open Classroom</a>
 				- <a href="http://themefortress.com/reverie/" rel="nofollow" title="Reverie Framework">Reverie</a></p>
 			<p>&copy; Nicolas Joseph <?php echo date('Y'); ?>.</p>
 		</div>
